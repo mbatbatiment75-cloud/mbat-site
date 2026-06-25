@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0b1f3a;
+  color: white;
+}
+
+header {
+  background: linear-gradient(90deg, #0b1f3a, #163a70);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background: #ffffff;
+  color: #0b1f3a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn.green {
+  background: #25D366;
+  color: white;
+}
+
+section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.services .grid div {
+  background: #163a70;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #061428;
+}
