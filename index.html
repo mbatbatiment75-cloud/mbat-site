@@ -6,47 +6,85 @@
     <title>MBAT Travaux & Rénovation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .hero { background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)), url('https://picsum.photos/id/1015/2000/1200') center/cover; }
+    </style>
 </head>
 <body class="bg-slate-950 text-white">
 
+    <!-- Header -->
     <header class="bg-slate-900 sticky top-0 z-50 border-b border-slate-700">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-5xl font-bold text-blue-500">MBAT</div>
-            <div class="flex items-center gap-4">
-                <a href="tel:0782392535" class="bg-white text-slate-900 px-6 py-3 rounded-2xl font-semibold flex items-center gap-2">
+            <div class="flex items-center gap-3">
+                <!-- Logo MBAT -->
+                <div class="text-5xl font-bold text-blue-500">MBAT</div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:0782392535" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-2xl font-semibold">
                     <i class="fas fa-phone"></i> 07 82 39 25 35
                 </a>
-                <a href="https://wa.me/33782392535" target="_blank" class="bg-green-500 px-6 py-3 rounded-2xl">WhatsApp</a>
+                <a href="https://wa.me/33782392535" target="_blank" class="bg-green-500 px-6 py-3 rounded-2xl font-semibold">
+                    WhatsApp
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero -->
-    <section class="min-h-screen bg-cover bg-center flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/id/1015/2000/1200');">
+    <section class="hero min-h-screen flex items-center">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h1 class="text-6xl font-bold mb-6">RÉNOVATION & TRAVAUX PROFESSIONNELS</h1>
-            <p class="text-2xl mb-10">Tous Corps d'État - Aubervilliers & Île-de-France</p>
-            <a href="#devis" class="bg-blue-600 text-xl px-10 py-5 rounded-3xl inline-block">Demander un devis</a>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">RÉNOVATION & TRAVAUX</h1>
+            <p class="text-2xl text-slate-300 mb-10">Tous Corps d'État - Aubervilliers & Île-de-France</p>
+            <a href="#devis" class="inline-block bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-3xl text-xl font-semibold">
+                Demander un devis gratuit
+            </a>
         </div>
     </section>
 
-    <!-- Réalisations - Photos de chantiers -->
+    <!-- Services -->
     <section class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Nos Services</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">⚡ Électricité</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🚿 Plomberie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🎨 Peinture</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🧱 Maçonnerie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🔑 Serrurerie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🪵 Menuiserie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🏠 Rénovation</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🛠️ Dépannage</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réalisations (photos de chantiers) -->
+    <section class="py-20 bg-slate-950">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12">Nos Réalisations</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <img src="https://picsum.photos/id/1015/800/600" class="rounded-3xl" alt="Rénovation appartement">
                 <img src="https://picsum.photos/id/133/800/600" class="rounded-3xl" alt="Peinture intérieure">
-                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl" alt="Rénovation cuisine">
-                <img src="https://picsum.photos/id/251/800/600" class="rounded-3xl" alt="Salle de bain rénovée">
-                <img src="https://picsum.photos/id/316/800/600" class="rounded-3xl" alt="Travaux électricité">
+                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl" alt="Rénovation salle de bain">
+                <img src="https://picsum.photos/id/251/800/600" class="rounded-3xl" alt="Maçonnerie">
+                <img src="https://picsum.photos/id/316/800/600" class="rounded-3xl" alt="Électricité">
                 <img src="https://picsum.photos/id/866/800/600" class="rounded-3xl" alt="Intérieur moderne">
             </div>
         </div>
     </section>
 
-    <footer class="bg-black py-12 text-center">
-        <p>MBAT Travaux & Rénovation • 07 82 39 25 35</p>
+    <!-- Contact & Devis -->
+    <section id="devis" class="py-20 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Prêt à rénover ?</h2>
+            <a href="tel:0782392535" class="block text-3xl font-semibold text-blue-400 mb-8">📞 07 82 39 25 35</a>
+            <a href="https://wa.me/33782392535" class="inline-block bg-green-500 text-xl px-10 py-5 rounded-3xl">Envoyer un message WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 text-center text-slate-500">
+        <p>MBAT Travaux & Rénovation © 2025 • SIRET 92768040500010</p>
     </footer>
 </body>
 </html>
