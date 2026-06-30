@@ -3,183 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBAT Travaux & Rénovation - Tous Corps d'État</title>
+    <title>MBAT Travaux & Rénovation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
-        .hero {
-            background: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.92)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
-        }
-        .card-hover:hover { transform: translateY(-8px); }
+        .hero { background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)), url('https://picsum.photos/id/1015/2000/1200') center/cover; }
     </style>
 </head>
-<body class="bg-slate-950 text-white overflow-x-hidden">
+<body class="bg-slate-950 text-white">
 
     <!-- Header -->
-    <header class="bg-slate-900/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-700">
+    <header class="bg-slate-900 sticky top-0 z-50 border-b border-slate-700">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="text-4xl font-bold text-blue-500 tracking-tighter">MBAT</div>
-                <div class="text-lg font-semibold leading-tight">
-                    TRAVAUX &<br>RÉNOVATION
-                </div>
+                <!-- Logo MBAT -->
+                <div class="text-5xl font-bold text-blue-500">MBAT</div>
             </div>
-            <nav class="hidden md:flex gap-8 text-sm font-medium">
-                <a href="#services" class="hover:text-blue-400 transition-colors">Nos Services</a>
-                <a href="#realisations" class="hover:text-blue-400 transition-colors">Réalisations</a>
-                <a href="#plaquette" class="hover:text-blue-400 transition-colors">Notre Plaquette</a>
-                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <a href="tel:0782392535" class="bg-white text-slate-900 px-6 py-3 rounded-2xl font-semibold flex items-center gap-2 hover:bg-blue-50 transition">
+            <div class="flex items-center gap-6">
+                <a href="tel:0782392535" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-2xl font-semibold">
                     <i class="fas fa-phone"></i> 07 82 39 25 35
                 </a>
-                <a href="https://wa.me/33782392535" target="_blank" class="bg-green-500 hover:bg-green-600 px-5 py-3 rounded-2xl transition">
-                    <i class="fab fa-whatsapp text-2xl"></i>
+                <a href="https://wa.me/33782392535" target="_blank" class="bg-green-500 px-6 py-3 rounded-2xl font-semibold">
+                    WhatsApp
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero -->
-    <section class="hero min-h-screen flex items-center relative">
-        <div class="max-w-7xl mx-auto px-6 pt-20 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
-                BÂTIR L'AVENIR<br>DE VOS ESPACES
-            </h1>
-            <p class="text-2xl md:text-3xl text-slate-300 mb-10 max-w-3xl mx-auto">
-                Rénovation & Travaux Tous Corps d'État<br>
-                <span class="text-blue-400">Qualité premium • Délais respectés</span>
-            </p>
-            <div class="flex flex-col sm:flex-row gap-5 justify-center">
-                <a href="#devis" class="bg-blue-600 hover:bg-blue-700 text-lg font-semibold px-10 py-5 rounded-3xl inline-flex items-center gap-3">
-                    <i class="fas fa-file-alt"></i> DEMANDER UN DEVIS GRATUIT
-                </a>
-                <a href="#services" class="border-2 border-white hover:bg-white/10 text-lg font-semibold px-10 py-5 rounded-3xl">
-                    Découvrir nos services
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-20 bg-slate-900">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-4">Nos Services</h2>
-            <p class="text-center text-slate-400 mb-12">Tous vos travaux, une seule entreprise</p>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-faucet text-5xl text-blue-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Plomberie</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-bolt text-5xl text-yellow-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Électricité</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-paint-roller text-5xl text-rose-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Peinture</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-bricks text-5xl text-amber-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Maçonnerie</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-door-closed text-5xl text-emerald-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Menuiserie</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-key text-5xl text-purple-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Serrurerie</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all">
-                    <i class="fas fa-home text-5xl text-cyan-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Rénovation Intérieure</h3>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-3xl text-center card-hover transition-all col-span-2 md:col-span-1">
-                    <i class="fas fa-tools text-5xl text-slate-400 mb-4"></i>
-                    <h3 class="font-semibold text-lg">Dépannage & Tous Corps d'État</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Réalisations -->
-    <section id="realisations" class="py-20 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Nos Réalisations</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Ajoute tes vraies photos ici -->
-                <img src="https://picsum.photos/id/1015/800/600" class="rounded-3xl" alt="Rénovation">
-                <img src="https://picsum.photos/id/133/800/600" class="rounded-3xl" alt="Électricité">
-                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl" alt="Peinture">
-            </div>
-        </div>
-    </section>
-
-    <!-- Devis -->
-    <section id="devis" class="py-20 bg-slate-900">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-8">Demander un Devis Gratuit</h2>
-            <form class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="Nom & Prénom" class="bg-slate-800 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
-                    <input type="tel" placeholder="Téléphone" class="bg-slate-800 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
-                </div>
-                <input type="email" placeholder="Email" class="w-full bg-slate-800 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
-                <textarea placeholder="Décrivez votre projet..." rows="5" class="w-full bg-slate-800 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500"></textarea>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-5 rounded-3xl text-lg font-semibold">
-                    ENVOYER LA DEMANDE DE DEVIS
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Plaquette -->
-    <section id="plaquette" class="py-20 bg-slate-800">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-8">Notre Plaquette</h2>
-            <a href="https://ton-lien-vers-la-plaquette.pdf" target="_blank" class="inline-flex items-center gap-4 bg-white text-slate-900 px-10 py-6 rounded-3xl text-xl font-semibold hover:scale-105 transition">
-                <i class="fas fa-download text-3xl"></i>
-                Télécharger la plaquette PDF
+    <section class="hero min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">RÉNOVATION & TRAVAUX</h1>
+            <p class="text-2xl text-slate-300 mb-10">Tous Corps d'État - Aubervilliers & Île-de-France</p>
+            <a href="#devis" class="inline-block bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-3xl text-xl font-semibold">
+                Demander un devis gratuit
             </a>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-20 bg-slate-900">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-4xl font-bold mb-8">Contactez-nous</h2>
-                <div class="space-y-6 text-lg">
-                    <p><i class="fas fa-map-marker-alt text-blue-400 mr-4"></i> Aubervilliers, Île-de-France</p>
-                    <p><i class="fas fa-phone text-blue-400 mr-4"></i> 07 82 39 25 35</p>
-                    <p><i class="fas fa-envelope text-blue-400 mr-4"></i> mbat.batiment75@gmail.com</p>
-                    <p><i class="fas fa-truck text-blue-400 mr-4"></i> Intervention dans toute l'Île-de-France</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <a href="tel:0782392535" class="flex-1 bg-white text-slate-900 py-6 rounded-3xl text-center text-xl font-semibold">📞 Appeler</a>
-                <a href="https://wa.me/33782392535" target="_blank" class="flex-1 bg-green-500 py-6 rounded-3xl text-center text-xl font-semibold">💬 WhatsApp</a>
-                <a href="mailto:mbat.batiment75@gmail.com" class="flex-1 bg-slate-700 py-6 rounded-3xl text-center text-xl font-semibold">✉️ Email</a>
+    <!-- Services -->
+    <section class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Nos Services</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">⚡ Électricité</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🚿 Plomberie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🎨 Peinture</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🧱 Maçonnerie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🔑 Serrurerie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🪵 Menuiserie</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🏠 Rénovation</div>
+                <div class="bg-slate-800 p-8 rounded-3xl text-center">🛠️ Dépannage</div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
-            <p>© 2025 MBAT Travaux & Rénovation - Tous droits réservés</p>
-            <p class="mt-2">Intervention rapide dans toute l'Île-de-France</p>
+    <!-- Réalisations (photos de chantiers) -->
+    <section class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Nos Réalisations</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <img src="https://picsum.photos/id/1015/800/600" class="rounded-3xl" alt="Rénovation appartement">
+                <img src="https://picsum.photos/id/133/800/600" class="rounded-3xl" alt="Peinture intérieure">
+                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl" alt="Rénovation salle de bain">
+                <img src="https://picsum.photos/id/251/800/600" class="rounded-3xl" alt="Maçonnerie">
+                <img src="https://picsum.photos/id/316/800/600" class="rounded-3xl" alt="Électricité">
+                <img src="https://picsum.photos/id/866/800/600" class="rounded-3xl" alt="Intérieur moderne">
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script>
-        // Menu mobile simple (à améliorer si besoin)
-        console.log("Site MBAT chargé avec succès !");
-    </script>
+    <!-- Contact & Devis -->
+    <section id="devis" class="py-20 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Prêt à rénover ?</h2>
+            <a href="tel:0782392535" class="block text-3xl font-semibold text-blue-400 mb-8">📞 07 82 39 25 35</a>
+            <a href="https://wa.me/33782392535" class="inline-block bg-green-500 text-xl px-10 py-5 rounded-3xl">Envoyer un message WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 text-center text-slate-500">
+        <p>MBAT Travaux & Rénovation © 2025 • SIRET 92768040500010</p>
+    </footer>
 </body>
 </html>
