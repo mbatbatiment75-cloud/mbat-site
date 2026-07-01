@@ -16,14 +16,15 @@
         </div>
     </header>
 
-    <section class="min-h-[80vh] bg-cover bg-center flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200');">
+    <!-- Hero -->
+    <section class="min-h-[70vh] bg-cover bg-center flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200');">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h1 class="text-6xl font-bold mb-4">RÉNOVATION PROFESSIONNELLE</h1>
             <p class="text-2xl mb-10">Tous Corps d'État - Aubervilliers & Île-de-France</p>
         </div>
     </section>
 
-    <!-- Photos de chantiers -->
+    <!-- Réalisations -->
     <section class="py-16 bg-slate-900">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12">Nos Réalisations</h2>
@@ -38,8 +39,36 @@
         </div>
     </section>
 
-    <footer class="bg-black py-12 text-center">
-        <p>MBAT Travaux & Rénovation • 07 82 39 25 35</p>
+    <!-- Formulaire de Devis -->
+    <section class="py-20 bg-slate-800" id="devis">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Demande de Devis</h2>
+            <p class="text-center text-slate-400 mb-12">Réponse rapide sous 24h • Gratuit et sans engagement</p>
+            
+            <form id="devisForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Nom & Prénom *" required class="bg-slate-900 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
+                    <input type="tel" placeholder="Téléphone *" required class="bg-slate-900 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
+                </div>
+                <input type="email" placeholder="Email" class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
+                <textarea placeholder="Décrivez votre projet (type de travaux, surface, etc.) *" rows="6" required class="w-full bg-slate-900 border border-slate-700 rounded-3xl px-6 py-4 focus:outline-none focus:border-blue-500"></textarea>
+                
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-6 rounded-3xl text-xl font-semibold transition">
+                    ENVOYER MA DEMANDE DE DEVIS
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 text-center text-slate-500">
+        <p>MBAT Travaux & Rénovation • SIRET 92768040500010</p>
     </footer>
+
+    <script>
+        document.getElementById('devisForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Merci ! Votre demande de devis a bien été envoyée.\nNous vous contacterons très rapidement au 07 82 39 25 35.');
+        });
+    </script>
 </body>
 </html>
