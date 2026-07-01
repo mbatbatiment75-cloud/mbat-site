@@ -3,72 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBAT Travaux & Rénovation</title>
+    <title>MBAT - Rénovation & Travaux Professionnels</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-950 text-white">
+<body class="bg-zinc-950 text-white">
 
-    <header class="bg-slate-900 py-6 border-b border-slate-700">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="text-5xl font-bold text-blue-500">MBAT</div>
-            <a href="tel:0782392535" class="text-2xl font-semibold text-blue-400">07 82 39 25 35</a>
+    <!-- Header -->
+    <header class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="text-4xl font-bold text-blue-500">MBAT</div>
+                <div class="text-sm leading-tight">
+                    TRAVAUX &<br>RÉNOVATION
+                </div>
+            </div>
+            <div class="flex items-center gap-6 text-lg">
+                <a href="tel:0782392535" class="font-semibold hover:text-blue-400">07 82 39 25 35</a>
+                <a href="https://wa.me/33782392535" target="_blank" class="bg-green-500 px-6 py-3 rounded-2xl font-medium">WhatsApp</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero -->
-    <section class="min-h-[70vh] bg-cover bg-center flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200');">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h1 class="text-6xl font-bold mb-4">RÉNOVATION PROFESSIONNELLE</h1>
-            <p class="text-2xl mb-10">Tous Corps d'État - Aubervilliers & Île-de-France</p>
+    <section class="h-screen bg-cover bg-center flex items-center relative" style="background-image: url('https://picsum.photos/id/1015/2000/1200')">
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="max-w-4xl mx-auto px-8 relative z-10 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Rénovation & Travaux de Qualité</h1>
+            <p class="text-2xl text-zinc-300 mb-10">Tous Corps d'État - Intervention rapide en Île-de-France</p>
+            <a href="#devis" class="bg-blue-600 hover:bg-blue-700 text-xl px-12 py-5 rounded-2xl inline-block">Obtenir un devis gratuit</a>
         </div>
     </section>
 
     <!-- Réalisations -->
-    <section class="py-16 bg-slate-900">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Nos Réalisations</h2>
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">Nos Réalisations Récentes</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <img src="https://picsum.photos/id/1015/800/600" class="rounded-3xl" alt="Rénovation">
-                <img src="https://picsum.photos/id/133/800/600" class="rounded-3xl" alt="Peinture">
-                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl" alt="Intérieur">
-                <img src="https://picsum.photos/id/251/800/600" class="rounded-3xl" alt="Chantier">
-                <img src="https://picsum.photos/id/316/800/600" class="rounded-3xl" alt="Rénovation">
-                <img src="https://picsum.photos/id/866/800/600" class="rounded-3xl" alt="Travaux">
+                <img src="https://picsum.photos/id/1015/800/600" class="rounded-3xl shadow-xl" alt="Rénovation appartement">
+                <img src="https://picsum.photos/id/133/800/600" class="rounded-3xl shadow-xl" alt="Peinture professionnelle">
+                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl shadow-xl" alt="Rénovation salle de bain">
+                <img src="https://picsum.photos/id/251/800/600" class="rounded-3xl shadow-xl" alt="Travaux intérieurs">
+                <img src="https://picsum.photos/id/316/800/600" class="rounded-3xl shadow-xl" alt="Électricité">
+                <img src="https://picsum.photos/id/866/800/600" class="rounded-3xl shadow-xl" alt="Rénovation complète">
             </div>
         </div>
     </section>
 
-    <!-- Formulaire de Devis -->
-    <section class="py-20 bg-slate-800" id="devis">
-        <div class="max-w-3xl mx-auto px-6">
+    <!-- Devis -->
+    <section id="devis" class="py-20 bg-zinc-950">
+        <div class="max-w-2xl mx-auto px-8">
             <h2 class="text-4xl font-bold text-center mb-4">Demande de Devis</h2>
-            <p class="text-center text-slate-400 mb-12">Réponse rapide sous 24h • Gratuit et sans engagement</p>
+            <p class="text-center text-zinc-400 mb-12">Nous vous répondons sous 24h</p>
             
-            <form id="devisForm" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="Nom & Prénom *" required class="bg-slate-900 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
-                    <input type="tel" placeholder="Téléphone *" required class="bg-slate-900 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
-                </div>
-                <input type="email" placeholder="Email" class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
-                <textarea placeholder="Décrivez votre projet (type de travaux, surface, etc.) *" rows="6" required class="w-full bg-slate-900 border border-slate-700 rounded-3xl px-6 py-4 focus:outline-none focus:border-blue-500"></textarea>
-                
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-6 rounded-3xl text-xl font-semibold transition">
-                    ENVOYER MA DEMANDE DE DEVIS
+            <form class="space-y-6">
+                <input type="text" placeholder="Votre nom" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4">
+                <input type="tel" placeholder="Téléphone" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4">
+                <textarea placeholder="Décrivez votre projet..." rows="6" class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-4"></textarea>
+                <button type="button" onclick="alert('Demande envoyée ! Nous vous contacterons rapidement.')" class="w-full bg-blue-600 py-6 rounded-3xl text-xl font-semibold">
+                    Envoyer la demande
                 </button>
             </form>
         </div>
     </section>
 
-    <footer class="bg-black py-12 text-center text-slate-500">
-        <p>MBAT Travaux & Rénovation • SIRET 92768040500010</p>
+    <footer class="bg-black py-12 text-center text-zinc-500">
+        <p>MBAT Travaux & Rénovation - SIRET 92768040500010</p>
     </footer>
-
-    <script>
-        document.getElementById('devisForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('✅ Merci ! Votre demande de devis a bien été envoyée.\nNous vous contacterons très rapidement au 07 82 39 25 35.');
-        });
-    </script>
 </body>
 </html>
