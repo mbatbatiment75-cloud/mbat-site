@@ -1,77 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBAT - Rénovation & Travaux Professionnels</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MBAT Travaux Tous Corps d'État</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-zinc-950 text-white">
 
-    <!-- Header -->
-    <header class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-8 py-6 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <div class="text-4xl font-bold text-blue-500">MBAT</div>
-                <div class="text-sm leading-tight">
-                    TRAVAUX &<br>RÉNOVATION
-                </div>
-            </div>
-            <div class="flex items-center gap-6 text-lg">
-                <a href="tel:0782392535" class="font-semibold hover:text-blue-400">07 82 39 25 35</a>
-                <a href="https://wa.me/33782392535" target="_blank" class="bg-green-500 px-6 py-3 rounded-2xl font-medium">WhatsApp</a>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <!-- Hero -->
-    <section class="h-screen bg-cover bg-center flex items-center relative" style="background-image: url('https://picsum.photos/id/1015/2000/1200')">
-        <div class="absolute inset-0 bg-black/70"></div>
-        <div class="max-w-4xl mx-auto px-8 relative z-10 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">Rénovation & Travaux de Qualité</h1>
-            <p class="text-2xl text-zinc-300 mb-10">Tous Corps d'État - Intervention rapide en Île-de-France</p>
-            <a href="#devis" class="bg-blue-600 hover:bg-blue-700 text-xl px-12 py-5 rounded-2xl inline-block">Obtenir un devis gratuit</a>
-        </div>
-    </section>
+<header class="hero">
 
-    <!-- Réalisations -->
-    <section class="py-20 bg-zinc-900">
-        <div class="max-w-6xl mx-auto px-8">
-            <h2 class="text-4xl font-bold text-center mb-16">Nos Réalisations Récentes</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <img src="https://picsum.photos/id/1015/800/600" class="rounded-3xl shadow-xl" alt="Rénovation appartement">
-                <img src="https://picsum.photos/id/133/800/600" class="rounded-3xl shadow-xl" alt="Peinture professionnelle">
-                <img src="https://picsum.photos/id/201/800/600" class="rounded-3xl shadow-xl" alt="Rénovation salle de bain">
-                <img src="https://picsum.photos/id/251/800/600" class="rounded-3xl shadow-xl" alt="Travaux intérieurs">
-                <img src="https://picsum.photos/id/316/800/600" class="rounded-3xl shadow-xl" alt="Électricité">
-                <img src="https://picsum.photos/id/866/800/600" class="rounded-3xl shadow-xl" alt="Rénovation complète">
-            </div>
-        </div>
-    </section>
+<h1>MBAT Travaux Tous Corps d'État</h1>
 
-    <!-- Devis -->
-    <section id="devis" class="py-20 bg-zinc-950">
-        <div class="max-w-2xl mx-auto px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">Demande de Devis</h2>
-            <p class="text-center text-zinc-400 mb-12">Nous vous répondons sous 24h</p>
-            
-            <form class="space-y-6">
-                <input type="text" placeholder="Votre nom" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4">
-                <input type="tel" placeholder="Téléphone" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4">
-                <textarea placeholder="Décrivez votre projet..." rows="6" class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-4"></textarea>
-                <button type="button" onclick="alert('Demande envoyée ! Nous vous contacterons rapidement.')" class="w-full bg-blue-600 py-6 rounded-3xl text-xl font-semibold">
-                    Envoyer la demande
-                </button>
-            </form>
-        </div>
-    </section>
+<p>
+Basée à Aubervilliers<br>
+Intervention dans toute l'Île-de-France
+</p>
 
-    <footer class="bg-black py-12 text-center text-zinc-500">
-        <p>MBAT Travaux & Rénovation - SIRET 92768040500010</p>
-    </footer>
+<div class="buttons">
+
+<a href="tel:0782392535" class="btn">
+📞 Appeler
+</a>
+
+<a href="https://wa.me/33782392535" class="btn whatsapp">
+💬 WhatsApp
+</a>
+
+<a href="#devis" class="btn devis">
+📄 Demander un devis
+</a>
+
+</div>
+
+</header>
+
+<section id="presentation">
+
+<h2>Votre spécialiste en rénovation</h2>
+
+<p>
+
+MBAT Travaux Tous Corps d'État accompagne les particuliers et les professionnels dans leurs projets de rénovation intérieure et extérieure.
+
+Nous intervenons rapidement dans toute l'Île-de-France avec un travail soigné et des finitions de qualité.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Nos prestations</h2>
+
+<div class="services">
+
+<div class="service">
+🚿
+<h3>Plomberie</h3>
+</div>
+
+<div class="service">
+⚡
+<h3>Électricité</h3>
+</div>
+
+<div class="service">
+🎨
+<h3>Peinture</h3>
+</div>
+
+<div class="service">
+🧱
+<h3>Maçonnerie</h3>
+</div>
+
+<div class="service">
+🚪
+<h3>Menuiserie</h3>
+</div>
+
+<div class="service">
+🔐
+<h3>Serrurerie</h3>
+</div>
+
+<div class="service">
+🏠
+<h3>Rénovation</h3>
+</div>
+
+<div class="service">
+🛠️
+<h3>Dépannage</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="plaquette">
+
+<h2>Notre plaquette</h2>
+
+<p>
+
+Cliquez sur le bouton ci-dessous pour consulter notre plaquette.
+
+</p>
+
+<a href="plaquette/MBAT-Plaquette.pdf" class="btn">
+
+📄 Ouvrir la plaquette
+
+</a>
+
+</section>
+
+<section id="devis">
+
+<h2>Demander un devis</h2>
+
+<p>
+
+Le formulaire complet sera ajouté avec le fichier suivant.
+
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>📍 Aubervilliers</p>
+
+<p>🚗 Intervention dans toute l'Île-de-France</p>
+
+<p>📞 07 82 39 25 35</p>
+
+<p>📧 mbat.batiment75@gmail.com</p>
+
+<p>SIRET : 92768040500010</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 MBAT Travaux Tous Corps d'État
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
