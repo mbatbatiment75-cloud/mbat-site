@@ -1,65 +1,238 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #0b1f3a;
-  color: white;
+/* ===========================
+   MBAT - STYLE.CSS
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-header {
-  background: linear-gradient(90deg, #0b1f3a, #163a70);
-  text-align: center;
-  padding: 40px 20px;
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f8fc;
+color:#222;
+line-height:1.6;
 }
 
-h1 {
-  margin: 0;
-  font-size: 28px;
+.hero{
+
+background:linear-gradient(135deg,#0d4f8b,#1f7bd8);
+
+color:white;
+
+text-align:center;
+
+padding:80px 20px;
+
 }
 
-p {
-  margin: 10px 0;
+.hero h1{
+
+font-size:48px;
+
+margin-bottom:20px;
+
 }
 
-.buttons {
-  margin-top: 15px;
+.hero p{
+
+font-size:20px;
+
+margin-bottom:30px;
+
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  background: #ffffff;
-  color: #0b1f3a;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
 }
 
-.btn.green {
-  background: #25D366;
-  color: white;
+.btn{
+
+background:white;
+
+color:#0d4f8b;
+
+padding:15px 25px;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
 }
 
-section {
-  padding: 30px 20px;
-  text-align: center;
+.btn:hover{
+
+background:#0d4f8b;
+
+color:white;
+
+border:2px solid white;
+
 }
 
-.services .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-top: 20px;
+.whatsapp{
+
+background:#25D366;
+
+color:white;
+
 }
 
-.services .grid div {
-  background: #163a70;
-  padding: 15px;
-  border-radius: 8px;
+.devis{
+
+background:#ffb000;
+
+color:black;
+
 }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #061428;
+section{
+
+padding:70px 20px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:36px;
+
+margin-bottom:40px;
+
+color:#0d4f8b;
+
+}
+
+.services{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.service{
+
+background:white;
+
+border-radius:12px;
+
+padding:30px;
+
+text-align:center;
+
+font-size:22px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.service:hover{
+
+transform:translateY(-8px);
+
+}
+
+.service h3{
+
+margin-top:15px;
+
+font-size:20px;
+
+color:#0d4f8b;
+
+}
+
+#plaquette{
+
+text-align:center;
+
+}
+
+#devis{
+
+background:#eef6ff;
+
+border-radius:15px;
+
+}
+
+#contact{
+
+text-align:center;
+
+}
+
+footer{
+
+background:#0d4f8b;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:50px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.btn{
+
+width:100%;
+
+max-width:300px;
+
+margin:auto;
+
+}
+
+section h2{
+
+font-size:28px;
+
+}
+
 }
